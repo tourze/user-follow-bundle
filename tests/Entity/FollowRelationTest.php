@@ -27,8 +27,8 @@ final class FollowRelationTest extends AbstractEntityTestCase
      */
     public static function propertiesProvider(): iterable
     {
-        yield 'user' => ['user', null];
-        yield 'followUser' => ['followUser', null];
+        // user 和 followUser 属性已经有专门的测试方法
+        // 避免在 DataProvider 中使用 UserInterface Mock 导致序列化问题
         yield 'status' => ['status', true];
     }
 
