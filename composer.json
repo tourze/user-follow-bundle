@@ -1,6 +1,6 @@
 {
   "name": "tourze/user-follow-bundle",
-  "description": "",
+  "description": "Symfony bundle for user follow/follower relationship management with event handling and EasyAdmin integration",
   "type": "symfony-bundle",
   "license": "MIT",
   "require": {
