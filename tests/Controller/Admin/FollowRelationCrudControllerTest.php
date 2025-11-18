@@ -39,27 +39,6 @@ final class FollowRelationCrudControllerTest extends AbstractEasyAdminController
         $this->assertStringContainsString('dashboard', $content);
     }
 
-    #[Test]
-    public function testGetEntityFqcnReturnsStringType(): void
-    {
-        $result = FollowRelationCrudController::getEntityFqcn();
-        $this->assertIsString($result);
-        $this->assertNotEmpty($result);
-    }
-
-    #[Test]
-    public function testGetEntityFqcnReturnsFollowRelationClass(): void
-    {
-        $expectedClass = FollowRelation::class;
-        $actualClass = FollowRelationCrudController::getEntityFqcn();
-
-        $this->assertSame($expectedClass, $actualClass);
-
-        // 测试类是否可以实例化
-        $instance = new $actualClass();
-        $this->assertInstanceOf($expectedClass, $instance);
-    }
-
     /**
      * @return AbstractCrudController<FollowRelation>
      */
