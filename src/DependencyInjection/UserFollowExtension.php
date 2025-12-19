@@ -4,7 +4,7 @@ namespace Tourze\UserFollowBundle\DependencyInjection;
 
 use Tourze\SymfonyDependencyServiceLoader\AutoExtension;
 
-class UserFollowExtension extends AutoExtension
+final class UserFollowExtension extends AutoExtension
 {
     protected function getConfigDir(): string
     {
